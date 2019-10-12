@@ -13,7 +13,7 @@ export class AppComponent  {
 
   private _subscription: Subscription;
 
-  title = 'HackNC - Pokedex';
+  title = ' Online Pokedex';
   searchTerm: string;
   pokemon: Pokemon;
 
