@@ -3,9 +3,10 @@
   <input class="form-control" placeholder="Pokemon Search" [(ngModel)]="searchTerm" (ngModelChange)="onSearchTermChange()">
 </div>
 <div *ngIf="pokemon">
-  <img [src]="pokemon.sprites.front_default">
-  <h2>{{pokemon.id}} - {{pokemon.name}}</h2>
-  <div>
+  <img [src]="pokemon.sprites.front_default" class="center" > 
+  <h2 id = "pokename">{{pokemon.name}}</h2> 
+ <!–– {{pokemon.id}} gives the pokemon number ––> 
+   <div>
     <h4>Moves</h4>
     <ul>
       <li *ngFor="let move of pokemon.moves">{{move.move.name}}</li>
